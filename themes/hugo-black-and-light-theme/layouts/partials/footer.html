@@ -1,0 +1,19 @@
+    
+<hr style="width:100%;text-align:center;background-color:#e0e0e0;margin-bottom: 5px;margin-top:5px">
+
+<section id=nav style="margin-top:10px;">
+
+  {{ with .Site.Params.Social.Github }}
+    [ <a href="https://github.com/{{ . }}" style = "font-family:Palatino, Garamond, Times, serif;font-variant: small-caps;color:#337ab7">github</a> ]
+  {{ end }}
+  {{ with .Site.Params.Social.LinkedIn }}
+  [ <a href="https://linkedin.com/in/{{ . }}" style = "font-family:Palatino, Garamond, Times, serif; font-variant: small-caps;color:#337ab7">linkedin</a> ]
+    {{ end }}
+
+</section>
+
+<br><br>
+
+  {{ template "_internal/google_analytics_async.html" . }}
+</body>
+</html>

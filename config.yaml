@@ -1,0 +1,32 @@
+baseurl: https://rafaelslins.github.io/
+title: Rafael Lins
+author: Rafael Lins
+canonifyurls: yes
+languagecode: en
+theme: hugo-black-and-light-theme
+pygmentsstyle: bw
+pygmentscodefences: yes
+params:
+  avatar: img/perfil1.png
+  disableWebFonts: no
+  sitename: Rafael Lins
+  social:
+    Github: rafaelslins
+    LinkedIn: rafael-lins-241323b8
+resources:
+- src: 'files/rafaellins_cv.pdf'
+  title: Curriculum Vitae
+menu:
+  main:
+    - name: blog
+      url: /blog/
+      weight: 1
+    - name: research
+      url: /research/
+      weight: 2
+    - name: software
+      url: /software/
+      weight: 3
+    - name: cv
+      url: /rafaellins_cv.pdf/
+      weight: 4

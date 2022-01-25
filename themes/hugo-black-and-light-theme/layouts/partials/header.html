@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="{{ .Description | default .Site.Params.Description }}">
+
+    {{ if not .Site.Params.disableWebFonts }}
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap" rel="stylesheet" media="print" type="text/css" onload="this.media='all'">
+    {{ end }}
+
+    <title>
+      {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+      {{ if eq $url "/" }}
+        {{ .Site.Title }}
+      {{ else }}
+        {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
+      {{ end }}
+    </title>
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{ partial "styles.html" . }}
+
+    {{ range .AlternativeOutputFormats -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+  </head>
+
+
+
+  <body>
+    
+    <header class = "cabecalho">
+      
+      <h1 style="font-variant:small-caps; font-weight:bold; margin:5px;margin-left:20px;color:black"><a href="/" >Rafael Lins</a></h1>
+      <section id=nav>
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" style = "font-variant: small-caps;font-family:Palatino, Garamond, Times, serif; padding: 0 20px; font-size:30px">{{ .Name }}</a>
+        {{ end }}
+      </section>
+    
+    </header>  
+    
+    <hr style="width:100%;text-align:center;background-color:#e0e0e0;margin-bottom: 5px;margin-top:5px">
+

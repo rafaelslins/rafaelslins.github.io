@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+
+<section id="content">
+<img class="rounded-circle" src="{{ .Site.Params.avatar }}" alt="" style="float:left;padding-left:50px;padding-right:50px">
+
+<div style="text-align: justify;">
+{{ .Content }}
+</div>
+</section>
+
+<br><br><br><br><br><br><br>
+
+{{ partial "footer.html" . }}

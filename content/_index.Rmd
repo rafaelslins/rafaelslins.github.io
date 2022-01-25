@@ -1,0 +1,16 @@
+---
+---
+
+# About
+
+Graduado em Estatística pela Universidade de Brasília (UnB) e Mestre em Estatística pela mesma Universidade. Atualmente é Analista de Ciência de Dados na [BRB Seguros](https://www.brbseguros.com.br/).
+
+Tem experiência em análise multivariada, modelagem estatística, aprendizado de máquina e visualização de dados. Tem interesses nas áreas de estatística aplicada, modelagem estatística e inferência causal aplicada a dados observacionais e experimentais. 
+
+
+# News
+
+- Artigo aceito na **Policy & Politics**, *Beyond Evidence-Based Policy: Information sources bureaucrats in the Global South use in policymaking* (com Natália Koga, Miguel Loureiro, Pedro Palotti, Bruno Couto e Shana Lima)
+- Artigo publicado na **Revista de Administração Pública**, *The use of multiple sources of information in public policy: the Brazilian federal bureaucracy* (com Natália Koga, Pedro Palotti, Bruno Couto, Maricilene do nascimento)
+
+

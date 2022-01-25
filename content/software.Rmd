@@ -1,0 +1,18 @@
+---
+title: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+- <a href="https://gfvonborries.shinyapps.io/shinyembrapav4/"> App: Rice Stickness Evaluator</a> - using model proposed by <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/cche.10017">von Borries et al. (2018)</a>.
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
