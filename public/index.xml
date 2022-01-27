@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rafael Lins</title>
+    <link>https://rafaelslins.github.io/</link>
+    <description>Recent content on Rafael Lins</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rafaelslins.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>História da Estatística (versão preliminar)</title>
+      <link>https://rafaelslins.github.io/blog/historia-da-estatistica/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafaelslins.github.io/blog/historia-da-estatistica/</guid>
+      <description>1840 Na década de 1840 o planeta Netuno foi descoberto a partir das leis de Newton
+1900 Na passagem do novo século, Galton, Pearson e Raphael Weldon combinaram seus esforços para fundar uma revista científica que aplicaria as ideias de Pearson aos dados biológicos.
+1904 Gosset trata do problema quando o malte moído era preparado para a fermentação, uma quantidade cuidadosamente medida de levedura era usada. estimacao da quantidade de levedura em um recipiente por meio de amostras</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://rafaelslins.github.io/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafaelslins.github.io/research/</guid>
+      <description>Peer ReviewedKoga, N. M., Loureiro, M., Palotti, P. L. de M., Lins, R. da S., Couto, B. G. do, Lima, S. N. “Beyond Evidence-Based Policy: Information sources bureaucrats in the Global Southuse in policymaking”, Policy &amp;amp; Politics (conditionally accepted).Palotti, P. L. de M., Koga, N. M., Couto, B. G. do, Nascimento, M. I. B. do e Lins, R. da S. (2021). “Uso de evidência pela burocracia dirigente do nível Federal”.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://rafaelslins.github.io/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafaelslins.github.io/software/</guid>
+      <description>App: Rice Stickness Evaluator - using model proposed by von Borries et al. (2018).</description>
+    </item>
+    
+  </channel>
+</rss>

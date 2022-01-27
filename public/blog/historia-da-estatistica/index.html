@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="">
+
+    
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap" rel="stylesheet" media="print" type="text/css" onload="this.media='all'">
+    
+
+    <title>
+      
+      
+         História da Estatística (versão preliminar) 
+      
+    </title>
+    <link rel="canonical" href="https://rafaelslins.github.io/blog/historia-da-estatistica/">
+
+    
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: #333333;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#333333;
+    max-width:1200px;
+    margin:auto;
+  }
+  
+  .cabecalho {
+    display: flex;
+    direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+  b, strong {
+    font-weight: bold;
+  }
+  
+  .rounded-circle {
+    border-radius: 50%!important;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify { float: left; }
+  .right-justify { float:right; }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family: "Palatino", "Times New Roman", Times, serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Palatino", "Times New Roman", Times, serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Palatino", "Times New Roman", Times, serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+    font-variant:small-caps;
+    color: 333333;
+  }
+
+  h2 {
+    font-size:28px;
+    font-variant:small-caps;
+    color: 333333;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+    font-variant:small-caps;
+    color: 333333;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+    font-variant:small-caps;
+    color: 333333;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, .date {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#333333;
+    line-height:120%;
+    font-variant:small-caps;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\25CF \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size: 15px;
+    padding: 20px 0 30px;
+    margin-left: 20px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:10px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content .date {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+    font-variant:small-caps;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 0;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:40px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 5px;
+  }
+
+  #links {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(1) {
+    margin-right:0.5em;;
+  }
+
+  #links :nth-child(2) {
+    margin-left:0.5em;;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Palatino", "Times New Roman", Times, serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+      font-variant:small-caps;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+      font-variant:small-caps;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    *, #nav h1 a {
+      color: #333333;
+    }
+
+    body {
+      background: #121212;
+    }
+
+    pre, code {
+      background-color: #262626;
+    }
+
+    #sub-header, .date {
+      color: #BABABA;
+    }
+
+    hr {
+      background: #EBEBEB;
+    }
+  }
+</style>
+
+
+    </head>
+
+
+
+  <body>
+    
+    <header class = "cabecalho">
+      
+      <h1 style="font-variant:small-caps; font-weight:bold; margin:5px;margin-left:20px;color:black"><a href="https://rafaelslins.github.io/" >Rafael Lins</a></h1>
+      <section id=nav>
+        
+        <a href="https://rafaelslins.github.io/blog/" style = "font-variant: small-caps;font-family:Palatino, Garamond, Times, serif; padding: 0 20px; font-size:30px">blog</a>
+        
+        <a href="https://rafaelslins.github.io/research/" style = "font-variant: small-caps;font-family:Palatino, Garamond, Times, serif; padding: 0 20px; font-size:30px">research</a>
+        
+        <a href="https://rafaelslins.github.io/software/" style = "font-variant: small-caps;font-family:Palatino, Garamond, Times, serif; padding: 0 20px; font-size:30px">software</a>
+        
+        <a href="https://rafaelslins.github.io/rafaellins_cv.pdf/" style = "font-variant: small-caps;font-family:Palatino, Garamond, Times, serif; padding: 0 20px; font-size:30px">cv</a>
+        
+      </section>
+    
+    </header>  
+    
+    <hr style="width:100%;text-align:center;background-color:#e0e0e0;margin-bottom: 5px;margin-top:5px">
+
+
+
+<section id=content>
+  <h1> História da Estatística (versão preliminar) </h1>
+
+  
+    <div id=sub-header>
+      January 2021 · 3 minute read
+    </div>
+  
+
+  <div class="entry-content">
+    <h2 id="1840">1840</h2>
+<p>Na década de 1840 o planeta Netuno foi descoberto a partir das leis de Newton</p>
+<h2 id="1900">1900</h2>
+<p>Na passagem do novo século, Galton, Pearson e Raphael Weldon combinaram seus esforços para fundar uma revista científica que aplicaria as ideias de Pearson aos dados biológicos.</p>
+<h2 id="1904">1904</h2>
+<p>Gosset trata do problema quando o malte moído era preparado para a fermentação, uma quantidade cuidadosamente medida de levedura era usada. estimacao da quantidade de levedura em um recipiente por meio de amostras</p>
+<h2 id="1908">1908</h2>
+<p>A estatística t foi introduzida  por William Sealy Gosset e publicado na Biometrika. ele foi convencido por KP a publicar o artigo com o pseudonimo student</p>
+<h2 id="1912">1912</h2>
+<p>Fisher publica seu primeiro artigo em estatística matemática denominado “On an Absolute Criterion for Fitting Frequency Curves”</p>
+<h2 id="1915">1915</h2>
+<p>Fisher publica &ldquo;Frequency distribution of the values of the correlation coefficient in samples from an indefinitely large population&rdquo;</p>
+<h2 id="1920">1920</h2>
+<p>Fisher publica &ldquo;A mathematical examination of the methods of determining the accuracy of an observation by the mean error, and by the mean square error&rdquo;</p>
+<p>Neste ano ele propõe um experimento para testar se uma moça saberia de fato identificar se o chá foi colocado antes do leite ou o leite foi colocado antes do chá</p>
+<h2 id="1921">1921</h2>
+<p>Fisher publica &ldquo;On the “probable error” of a coefficient of correlation deduced from a small sample&rdquo;</p>
+<h2 id="1922">1922</h2>
+<p>Fisher publica &ldquo;On the mathematical foundations of theoretical statistics&rdquo;</p>
+<p>&ldquo;On the interpretation of &ldquo;2 from contingency tables, and the calculation of P&rdquo;</p>
+<p>&ldquo;The goodness of fit of regression formulae, and the distribution of regression coefficients&rdquo;</p>
+<h2 id="1924">1924</h2>
+<p>Fisher publica &ldquo;The distribution of the partial correlation coefficient&rdquo;</p>
+<p>&ldquo;On a distribution yielding the error functions of several
+well known statistics&rdquo;</p>
+<h2 id="1925">1925</h2>
+<p>Fisher publica a primeira edição de \textit{Statistical Methods for Research Workers}. Later editions (1937), (1942), (1947), (1949), (1951), (1960), (1966)</p>
+<p>&ldquo;Theory of statistical estimation&rdquo;</p>
+<p>&ldquo;Applications of “Student’s” distribution&rdquo;</p>
+<h2 id="1926">1926</h2>
+<p>Fisher publica &ldquo;The arrangement of field experiments&rdquo;</p>
+<h2 id="1928">1928</h2>
+<p>Fisher publica &ldquo;The general sampling distribution of the multiple correlation coefficient&rdquo;</p>
+<h2 id="1930">1930</h2>
+<p>Fisher publica &ldquo;Inverse probability&rdquo;</p>
+<h2 id="1933">1933</h2>
+<p>Karl Pearson se aposenta</p>
+<h2 id="1934">1934</h2>
+<p>Fisher publica &ldquo;Two new properties of mathematical likelihood&rdquo;</p>
+<h2 id="1935">1935</h2>
+<p>Fisher publica \textit{The Design of Experiments}</p>
+<p>&ldquo;The mathematical distributions used in the common tests of significance&rdquo;</p>
+<p>&ldquo;The logic of inductive inference (with discussion)&rdquo;</p>
+<h2 id="1938">1938</h2>
+<p>Fisher e F. Yates publicam &ldquo;Statistical Tables for Biological, Agricultural and Medical Research. Later editions (1943), (1948), (1953), (1957), (1963).&rdquo;</p>
+<h2 id="1943">1943</h2>
+<p>Fisher se torna professor de genética em Cambridge</p>
+<h2 id="1956">1956</h2>
+<p>Fisher publica &ldquo;Statistical Method and Scientific Inference&rdquo; 2nd ed. (1959), 3rd ed. (1973)</p>
+<h2 id="1957">1957</h2>
+<p>Fisher se aposenta como professor em Cambridge</p>
+<h2 id="1960">1960</h2>
+<p>Um homem que presenciou o experimento de Fisher contou a história para David Salsburg que mais tarde escreveu o livro The Lady Tasting Tea</p>
+<h2 id="1990">1990</h2>
+<p>&ldquo;Statistical Methods, Inference, and Experimental Design. Oxford Univ. Press (1990). Reprints of the latest editions of [73], [85], and [86]&rdquo;</p>
+
+  </div>
+
+
+</section>
+
+    
+<hr style="width:100%;text-align:center;background-color:#e0e0e0;margin-bottom: 5px;margin-top:5px">
+
+<section id=nav style="margin-top:10px;">
+
+  
+    [ <a href="https://github.com/rafaelslins" style = "font-family:Palatino, Garamond, Times, serif;font-variant: small-caps;color:#337ab7">github</a> ]
+  
+  
+  [ <a href="https://linkedin.com/in/rafael-lins-241323b8" style = "font-family:Palatino, Garamond, Times, serif; font-variant: small-caps;color:#337ab7">linkedin</a> ]
+    
+
+</section>
+
+<br><br>
+
+  
+</body>
+</html>
+
+
+
