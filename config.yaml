@@ -14,7 +14,7 @@ params:
     Github: rafaelslins
     LinkedIn: rafael-lins-241323b8
 resources:
-- src: 'files/rafaellins_cv.pdf'
+  src: 'files/rafaellins_cv.pdf'
   title: Curriculum Vitae
 menu:
   main:
